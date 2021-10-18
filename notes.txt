@@ -1,0 +1,26 @@
+Please name variables well
+ty
+
+- let is used for variables that can be redefined, const is oviously used for constants
+- You can use let and const without specifying a value if you just want to declare the variable as something that exists
+
+    let variableHere;
+    variableHere = valueHere;
+    let variableHere = valueHere;
+
+    const constant = valueHere; 
+
+- Don't declare variables using var, just don't
+
+- For values, put a text value in quotes, put something like a number or true/false without quotes
+
+    variableHere = 7;
+    variableHere = true;
+    variableHere = "textHere";
+
+- Use a value of null to indicate no value
+
+- You can use math operations while defining variables
+
+    variableHere = 7 + 7;
+    variableHere = 7 + variableHere2;
