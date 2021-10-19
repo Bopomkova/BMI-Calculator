@@ -24,3 +24,24 @@ ty
 
     variableHere = 7 + 7;
     variableHere = 7 + variableHere2;
+
+- You can also use math to add strings, but there's a better way using back quotes and ${variableHere} to mention a variable
+
+    let variableHere = "textHere";
+    const variableHere2 = `moreTextHere ${variableHere}`;
+    console.log(variableHere2);
+
+    Will display "moreTextHere textHere"
+
+- You can use functions to do things
+
+    function functionName(argumentNameHere){
+        console.log(`textHere ${argumentNameHere}`)
+    
+    functionName(argumentValueHere);
+
+    Will display "textHere argumentValueHere" in the console
+
+- return sends an output outside of a function
+
+    return x + y;
