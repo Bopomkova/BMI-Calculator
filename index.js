@@ -1,9 +1,5 @@
-function testName(name) {
-  console.log(`Hello ${name}`);
-}
-testName("Bob");
+const arr = [1, 2, 3, 4, 5];
 
-function add(x, y) {
-  return x + y;
-}
-console.log(add(7, 9));
+arr.forEach((number) => {
+  console.log(`This is half of ${number * 2}`);
+});

@@ -45,3 +45,30 @@ ty
 - return sends an output outside of a function
 
     return x + y;
+
+- You can put a function inside of a function, but please don't put a function inside itself
+- If you define functionA inside of functionB, you cannot use functionA outside of functionB
+- This is because nothing escapes the curly brackets
+- If functionA is defined differently inside and outside of functionB, its definition in functionB will take priority while in functionB
+
+- An array is a list of things, you can even put an array inside of another array
+
+    const arr = [3, true, "yellow"];
+    console.log(arr[0]) /*This would display the 0th term of arr, which is 3*/
+
+    const arr2 = [3, true, [5, -7, "cake"]]
+
+- You can use .length to check an array's length
+
+    const arr = [1, 2, 3, 4]
+    
+    console.log(arr.length) /*This would display 3, the length of the array*/
+
+- You can use .push, .pop, .unshift, and .shift to change the terms of an array
+
+    arr.push("newTerm")
+
+- The => (arrow) function automatically returns the contents
+- .forEach() performs a function on each term which meets its parameters
+
+5min in to L7
