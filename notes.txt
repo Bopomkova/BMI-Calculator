@@ -71,4 +71,30 @@ ty
 - The => (arrow) function automatically returns the contents
 - .forEach() performs a function on each term which meets its parameters
 
-5min in to L7
+- .map creates a new array based performing a specified function on every element in a different array
+
+    const mappedArr = originalArr.map((element) =>{
+        functionA
+    })
+
+- Objects are another way of storing information.
+
+    const objectA = {
+        varA: 1,
+        varB: "apples",
+        varC: false,
+    }
+
+- You can also put functions inside of objects.
+
+    const objectA = {
+        varA: 1,
+        varB: "apples",
+        addVarA: function (){
+            this.varA++;
+        },
+    }
+- "this" means refer to the object, and "++" means increase by 1, so "this.varA++;" means increase the object's value of varA by 1
+- You can also refer to object information outside of the object.
+
+    objectA.varA
