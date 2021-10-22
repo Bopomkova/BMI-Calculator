@@ -17,9 +17,18 @@ const user = {
   firstName: "Billy",
   lastName: "Bob",
   height: 170,
-  weight: -11,
+  weight: 100,
 };
 
-function bmiCalculator() {
-  return user.weight / (user.height ^ 2);
+function bmiCalc(w, h) {
+  //This line is also probably broken
+  return w / ((h / 100) ^ 2); //This line works
 }
+
+bmiCalc(user.weight, user.height); //This line is broken
+
+console.log(
+  `Hello ${user.firstName} ${
+    user.lastName
+  }! Your BMI is ${bmiCalc()}. You are considered to be `
+);
