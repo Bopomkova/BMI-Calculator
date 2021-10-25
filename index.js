@@ -1,18 +1,3 @@
-/*const identity = {
-  firstName: "Bob",
-  lastName: "Smith",
-  age: 5,
-  alive: true,
-  addAge: function () {
-    this.age++;
-  },
-  getFullName: function () {
-    return `${this.firstName} ${this.lastName}`;
-  },
-};
-identity.addAge();
-console.log(identity.getFullName(), identity.age);*/
-
 const user = {
   firstName: "Billy",
   lastName: "Bob",
@@ -21,14 +6,20 @@ const user = {
 };
 
 function bmiCalc(w, h) {
-  //This line is also probably broken
-  return w / ((h / 100) ^ 2); //This line works
+  return w / ((h / 100) * (h / 100));
 }
 
-bmiCalc(user.weight, user.height); //This line is broken
+userBmi = Math.round(bmiCalc(user.weight, user.height));
+
+function bmiComp(x) {
+  if (x > 30) return "obese";
+  if (x > 25) return "overweight";
+  if (x < 19) return "underweight";
+  else return "healthy";
+}
 
 console.log(
   `Hello ${user.firstName} ${
     user.lastName
-  }! Your BMI is ${bmiCalc()}. You are considered to be `
+  }! Your BMI is ${userBmi}. You are considered to be ${bmiComp(userBmi)}.`
 );
